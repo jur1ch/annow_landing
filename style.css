@@ -315,8 +315,8 @@ li:hover {
   justify-content: center;
   background: url(./IMAGE_7.png) center/500px, url(./IMAGE_2.png) 0 0/20%, url(./IMAGE_3.png) 90% 5%/18%, url(./IMAGE_4.png) bottom right/50%, url(./IMAGE_5.png) 10% 70%, url(./IMAGE_6.png) 90% 60%, url(./IMAGE.png) 50%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
+/*   background-attachment: fixed;
+  position: relative; */
   top: 65px;
   /* z-index: 10; */
 }
