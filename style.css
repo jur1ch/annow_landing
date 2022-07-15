@@ -315,9 +315,9 @@ li:hover {
   justify-content: center;
   background: url(./IMAGE_7.png) center/500px, url(./IMAGE_2.png) 0 0/20%, url(./IMAGE_3.png) 90% 5%/18%, url(./IMAGE_4.png) bottom right/50%, url(./IMAGE_5.png) 10% 70%, url(./IMAGE_6.png) 90% 60%, url(./IMAGE.png) 50%;
   background-repeat: no-repeat;
-/*   background-attachment: fixed;
-  position: relative; */
-  top: 65px;
+  background-attachment: fixed;
+  /* position: relative;
+  top: 65px; */
   /* z-index: 10; */
 }
 
@@ -854,7 +854,8 @@ li:hover {
   transition: 0.5s;
 }
 
-.member:hover {
+.member:hover,
+.member:active {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
   border-radius: 5%;
@@ -865,7 +866,9 @@ li:hover {
 }
 
 .member:hover .member__name,
-.member:hover .member__job-title {
+.member:hover .member__job-title,
+.member:active .member__name,
+.member:active .member__job-title {
   -webkit-transform: translate(0, 8vw) rotate(720deg);
   transform: translate(0, 8vw) rotate(720deg);
   -webkit-transition: 0.5s;
